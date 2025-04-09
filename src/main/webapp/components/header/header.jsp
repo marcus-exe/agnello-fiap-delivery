@@ -7,7 +7,7 @@
   </div>
   <div class="logoDiv">
     <a class="headerLink" href="/products">Produtos</a>
-    <a class="headerLink" href="#">Sobre N�s</a>
+    <a class="headerLink" href="#">Sobre Nos</a>
   </div>
   <div class="logoDiv">
     <a class="headerLink" href="/cart">
