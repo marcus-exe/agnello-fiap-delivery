@@ -1,12 +1,33 @@
 <%@ taglib uri="http://java.sun.com/jsp/jstl/core" prefix="c" %>
-<!DOCTYPE html>
-<html>
-<head>
-    <title>Welcome</title>
-</head>
-<body>
-    <h1>Welcome to My JSP Application!</h1>
-    <p>Today's date is: <%= new java.util.Date() %></p>
-    <p>Feel free to explore the features of this application.</p>
-</body>
-</html>
+<%@ page language="java" contentType="text/html; charset=UTF-8" pageEncoding="UTF-8" %>
+
+  <!DOCTYPE html>
+  <html>
+
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="icon" type="image" href="./assets/images/logo.png" />
+    <link href="./resources/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="index.css">
+    <title>Agnello</title>
+  </head>
+
+  <body>
+    <jsp:include page="components/header/header.jsp"></jsp:include>
+    <main>
+      <jsp:include page="components/banner/banner.jsp"></jsp:include>
+      <jsp:include page="components/categories/categories.jsp"></jsp:include>
+    </main>
+    <footer>
+   	  <jsp:include page="components/footer/footer.jsp"></jsp:include>
+    </footer>
+
+
+
+
+
+    <script src="./resources/js/bootstrap.bundle.min.js"></script>
+  </body>
+
+  </html>
