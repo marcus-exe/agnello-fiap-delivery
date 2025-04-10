@@ -51,6 +51,14 @@
                 </configuration>
             </plugin>
 
+            <!-- Maven Plugin that Builds the .War file -->
+            <plugin>
+                <groupId>org.apache.maven.plugins</groupId>
+                <artifactId>maven-war-plugin</artifactId>
+                <version>3.3.2</version>
+            </plugin>
+
+
             <!-- Tomcat 10 Plugin for WAR Deployment -->
             <plugin>
                 <groupId>org.apache.tomcat.maven</groupId>
