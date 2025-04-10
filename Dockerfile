@@ -1,5 +1,5 @@
 # Use the official Tomcat image from Docker Hub
-FROM tomcat:latest
+FROM docker.io/tomcat:latest
 
 # Copy your JSP project into the Tomcat webapps directory
 COPY target/servlet-demo-1.0-SNAPSHOT.war /usr/local/tomcat/webapps/ROOT.war
