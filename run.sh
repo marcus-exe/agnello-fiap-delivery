@@ -20,9 +20,9 @@ if [ ! -f target/*.war ]; then
 fi
 
 echo "🐳 Building Docker image..."
-podman build -t localhost/my-jsp-app:latest .
+podman build -t marcus21/my-jsp-app:latest .
 
 echo "🚀 Running Docker container..."
-podman run -d -p 8080:8080 localhost/my-jsp-app:latest
+podman run -d -p 8080:8080 marcus21/my-jsp-app:latest
 
 echo "✅ Application is running at: http://localhost:8080"
