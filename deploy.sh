@@ -5,14 +5,8 @@ set -e
 echo "📦 Building WAR..."
 mvn clean package -DskipTests
 
-echo "🐳 Building container..."
-podman build -t my-jsp-app:latest .
+echo "🐳 Building & starting container via podman-compose..."
+podman-compose down || true  # in case it's already running
+podman-compose up -d --build
 
-echo "🧹 Cleaning up previous container..."
-podman stop my-jsp-app 2>/dev/null || true
-podman rm my-jsp-app 2>/dev/null || true
-
-echo "🚀 Starting new container..."
-podman run -d --name my-jsp-app -p 8080:8080 my-jsp-app:latest
-
-echo "✅ App is live at http://54.198.38.100/"
+echo "✅ App is live at http://<your-public-ip>:8080/"
