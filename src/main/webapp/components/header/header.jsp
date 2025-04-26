@@ -1,16 +1,17 @@
+<%@ page language="java" contentType="text/html; charset=UTF-8" pageEncoding="UTF-8" %>
 <header class="headerContainer">
   <div class="logoDiv">
-    <a href="/vinheiria-agnello" class="logo-link">
+    <a href="/" class="logo-link">
       <img class="headerImage" src="./assets/images/logo.png" alt="Logo Vinheria Agnello" />
       <h1 class="headerTitle">Vinheria Agnello</h1>
     </a>
   </div>
   <div class="navLinks">
-    <a class="headerLink" href="/vinheiria-agnello/products">Produtos</a>
-    <a class="headerLink" href="#">Sobre Nós</a>
+    <a class="headerLink" href="/products">Produtos</a>
+    <a class="headerLink" href="#">Sobre Nos</a>
   </div>
   <div class="cartDiv">
-    <a class="cartLink" href="/vinheiria-agnello/cart">
+    <a class="cartLink" href="/cart">
       <div class="cart-icon-container">
         <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="currentColor" class="bi bi-cart2"
           viewBox="0 0 16 16">
@@ -254,7 +255,7 @@
       mobileMenuToggle.addEventListener('click', function() {
         navLinks.classList.toggle('active');
         
-        // Animar as barras do menu hambúrguer
+        // Animar as barras do menu hambï¿½rguer
         const spans = this.querySelectorAll('span');
         if (navLinks.classList.contains('active')) {
           spans[0].style.transform = 'rotate(45deg) translate(5px, 6px)';

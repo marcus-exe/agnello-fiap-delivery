@@ -1,3 +1,4 @@
+<%@ page language="java" contentType="text/html; charset=UTF-8" pageEncoding="UTF-8" %>
 <section class="hero-banner">
   <div class="banner-container">
     <div class="banner-image-container">
@@ -7,17 +8,21 @@
     
     <div class="banner-content">
       <div class="welcome-message">
-        <h1 class="banner-title">Bem-vindo à <span>Vinheria Agnello</span></h1>
-        <p class="banner-subtitle">Tradição e excelência em vinhos desde 1995</p>
+        <h1 class="banner-title">Bem-vindo Ã  <span>Vinheria Agnello</span></h1>
+        <p class="banner-subtitle">TradiÃ§Ã£o e excelÃªncia em vinhos desde 1995</p>
         <div class="banner-cta">
-          <a href="/vinheiria-agnello/products" class="btn-primary">Explorar Vinhos</a>
-          <a href="#" class="btn-secondary">Sobre Nós</a>
+          <a href="/products" class="btn-primary">Explorar Vinhos</a>
+          <a href="#" class="btn-secondary">Sobre NÃ³s</a>
         </div>
       </div>
       
       <div class="owner-message">
         <div class="message-bubble">
-          <p>Olá a todos! Meu nome é Giulio Agnello e é um prazer imenso recebê-los em minha vinheiria. Gostaria de ajudá-los a escolher o vinho perfeito para o seu próximo momento. Posso auxiliar em algo?</p>
+<<<<<<< HEAD
+          <p>Olï¿½ a todos! Meu nome ï¿½ Giulio Agnello e ï¿½ um prazer imenso recebï¿½-los em minha vinheiria. Gostaria de ajudï¿½-los a escolher o vinho perfeito para o seu prï¿½ximo momento. Posso auxiliar em algo?</p>
+=======
+          <p>OlÃ¡ a todos! Meu nome Ã© Giulio Agnello e Ã© um prazer imenso recebÃª-los em minha vinheiria. Gostaria de ajudÃ¡-los a escolher o vinho perfeito para o seu prÃ³ximo momento. Posso auxiliar em algo?</p>
+>>>>>>> 66d8c47 (Fase 02 Fixup - Deploy Delivery)
         </div>
         <img class="owner-image" alt="Giulio Agnello" src="assets/images/banner-oldman.png" />
       </div>
@@ -228,7 +233,7 @@
   }
 }
 
-/* Ajuste para garantir que o banner não sobreponha outros elementos */
+/* Ajuste para garantir que o banner nï¿½o sobreponha outros elementos */
 main {
   display: flex;
   flex-direction: column;

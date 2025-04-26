@@ -1,18 +1,18 @@
 <%@ taglib uri="http://java.sun.com/jsp/jstl/core" prefix="c" %>
 <%@page import="br.com.vinheiriaAgnello.classes.Categories"%>
-
+<%@page language="java" contentType="text/html; charset=UTF-8" pageEncoding="UTF-8" %>
 <section class="categories-section">
   <div class="categories-container">
     <div class="section-header">
       <h2 class="section-title">Vinhos para todos os momentos</h2>
-      <p class="section-subtitle">Explore nossa seleção exclusiva de vinhos premium</p>
+      <p class="section-subtitle">Explore nossa seleÃ§Ã£po exclusiva de vinhos premium</p>
     </div>
     
     <%
     Categories[] categories = {
       new Categories("Tintos", "assets/images/vinho-tinto.jpg"),
       new Categories("Brancos", "assets/images/vinho-branco.jpg"),
-      new Categories("Rosés", "assets/images/vinho-rose.jpg"),
+      new Categories("Rosï¿½s", "assets/images/vinho-rose.jpg"),
       new Categories("Espumantes", "assets/images/vinho-espumante.jpg"),
       new Categories("Licorosos", "assets/images/vinho-licoroso.jpg"),
       new Categories("Sobremesa", "assets/images/vinho-sobremesa.jpg"),
@@ -22,7 +22,7 @@
     
     <div class="categories-grid">
       <c:forEach var="category" items="${categories}">
-        <a href="/vinheiria-agnello/products?category=${category.name}" class="category-card">
+        <a href="/products?category=${category.name}" class="category-card">
           <div class="card-image-container">
             <img class="card-image" src="${category.image}" alt="${category.name}" />
             <div class="card-overlay"></div>
