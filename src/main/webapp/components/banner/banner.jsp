@@ -18,11 +18,9 @@
       
       <div class="owner-message">
         <div class="message-bubble">
-<<<<<<< HEAD
-          <p>Ol� a todos! Meu nome � Giulio Agnello e � um prazer imenso receb�-los em minha vinheiria. Gostaria de ajud�-los a escolher o vinho perfeito para o seu pr�ximo momento. Posso auxiliar em algo?</p>
-=======
+
           <p>Olá a todos! Meu nome é Giulio Agnello e é um prazer imenso recebê-los em minha vinheiria. Gostaria de ajudá-los a escolher o vinho perfeito para o seu próximo momento. Posso auxiliar em algo?</p>
->>>>>>> 66d8c47 (Fase 02 Fixup - Deploy Delivery)
+
         </div>
         <img class="owner-image" alt="Giulio Agnello" src="assets/images/banner-oldman.png" />
       </div>
